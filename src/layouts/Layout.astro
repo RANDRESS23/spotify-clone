@@ -54,6 +54,20 @@ const { title } = Astro.props
     </style>
 
     <style is:global>
+      aside::-webkit-scrollbar,
+      main::-webkit-scrollbar {
+        width: 0.8rem;
+      }
+
+      aside::-webkit-scrollbar-thumb,
+      main::-webkit-scrollbar-thumb {
+        background: #55555c;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
       html {
         font-family: "CircularStd", system-ui, sans-serif;
         background: #010101;
