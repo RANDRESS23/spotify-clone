@@ -54,13 +54,13 @@ const playListSongs = songs.filter((song) => song.albumId === playlist?.albumId)
     </header>
 
     <div class="pl-6 pt-6">
-      <CardPlayButton client:load id={id} size="large" />
+      <CardPlayButton client:load client:only="react" id={id} size="large" />
     </div>
 
     <div class="relative z-10 px-6 pt-10"></div>
 
     <section class="p-6">
-      <MusicsTable songs={playListSongs} client:load/>
+      <MusicsTable songs={playListSongs} client:load client:only="react" />
     </section>
   </div>
 </Layout>
