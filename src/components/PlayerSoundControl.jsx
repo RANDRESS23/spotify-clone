@@ -37,8 +37,13 @@ export const PlayerSoundControl = ({ audio }) => {
         min={0}
         className="w-[400px]"
         onValueChange={(value) => {
+          audio.current.pause()
+          
           const [newCurrentTime] = value
-          audio.current.currentTime = newCurrentTime
+          audio.current.currentTime = newCurrentTime          
+        }}
+        onClick={() => {
+          audio.current.play()
         }}
       />
 

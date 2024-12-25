@@ -3,6 +3,8 @@ import Layout from "../layouts/Layout.astro"
 import PlayListItemCard from "@/components/PlayListItemCard.astro"
 import { playlists } from "@/lib/data"
 import Greeting from "@/components/Greeting.svelte"
+
+export const prerender = true
 ---
 
 <Layout title="Spotify Clone">

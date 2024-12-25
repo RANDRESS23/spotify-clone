@@ -2,7 +2,7 @@ import { PlayerControlButtonBar } from "@/components/PlayerControlButtonBar";
 import { PlayerCurrentSong } from "@/components/PlayerCurrentSong"
 import { PlayerSoundControl } from "@/components/PlayerSoundControl"
 import { PlayerVolumeControl } from "@/components/PlayerVolumeControl"
-import { useCurrentMusic } from "@/hooks/UseCurrentMusic";
+import { useCurrentMusic } from "@/hooks/useCurrentMusic";
 import { useEffect, useRef } from "react"
 import { usePlayerStore } from "@/store/playerStore"
 
